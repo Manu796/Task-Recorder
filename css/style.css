@@ -2,18 +2,14 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: D4E6B5;
-}
-
 body {
     margin: 0px;
     padding: 0px;
 }
 
-/* --------------PANTALLA INICIAL--------------- */
+/* -----------------------------------------PANTALLA INICIAL--------------------------------------------------- */
 .pantallaInicial {
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
@@ -31,7 +27,7 @@ h2 {
     text-align: center;
 }
 
-/* --------------CARGAR TAREA--------------- */
+/* --------------------------------------------------CARGAR TAREA--------------------------------------------------- */
 .cargarTarea {
     display: none;
     font-family: 'Source Code Pro', monospace;
@@ -74,7 +70,7 @@ span {
     padding: 15px;
     background: #877B66;
     color: white;
-    font-size: 1.2em;
+    font-size: 25px;
     font-variant: small-caps;
     cursor: pointer;
     display: block;
@@ -156,9 +152,9 @@ span::after {
     color: black;
 }
 
-/* --------------LISTADO TAREAS--------------- */
+/* --------------------------------LISTADO TAREAS------------------------------------------ */
 .listadoTareas {
-    display: flex;
+    display: none;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
@@ -176,13 +172,15 @@ span::after {
     border-radius: 10px;
 }
 
-.tarea-a-realizar{
+/* .tarea-a-realizar{
 
-}
+} */
 
 .tiempo-restante{
     display: block;
     text-align: end;
-    margin: 10px;
+    margin: 0px 13px 0px 0px;
+    font-size: 18px;
+    color: white;
 }
 
