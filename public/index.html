@@ -1,126 +1,309 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Recorder</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!------------------------------------------------pantallaInicial------------------------------------------------>
     <div class="pantalla1" id="pantalla1">
-        <h1>Recordador de Tareas</h1>
-        <h2>No tenes tareas cargadas aun!</h2>
-        <img src="img/sad.svg" alt="" class="imgSad">
-        <!--------boton agregar-------->
-        <button class="btnAdd" id="btn1">Agregar</button>
-
+      <h1>Recordador de Tareas</h1>
+      <h2>No tenes tareas cargadas aun!</h2>
+      <img src="img/sad.svg" alt="" class="imgSad" />
+      <!--------boton agregar-------->
+      <button class="btnAdd" id="btn1">Agregar</button>
     </div>
 
     <!------------------------------------------------cargarTarea--------------------------------------------------->
     <form class="pantalla2 d-none" id="pantalla2">
+      <div class="containerInput">
+        <h1>Carga tu recordatorio</h1>
+        <input
+          type="text"
+          name="titulo"
+          class="tarea"
+          id="inputTarea"
+          placeholder="Ingresar tarea"
+        />
+      </div>
+      <!--------Seleccionar imagen-------->
+      <div class="dropdownContainer" id="containerUlPantalla2">
+        <ul class="slide container-iconitos" id="imgContenedor">
+          <li>
+            <img
+              src="img/2bag-svgrepo-com.svg"
+              class="iconitos"
+              alt="Mochila"
+              id="img2"
+            />
+          </li>
+          <li>
+            <img
+              src="img/1air-ticket-svgrepo-com.svg"
+              class="iconitos"
+              alt="Ticket"
+              id="img1"
+            />
+          </li>
+          <li>
+            <img
+              src="img/3bank-card-svgrepo-com.svg"
+              class="iconitos"
+              alt="Tarjeta"
+              id="img3"
+            />
+          </li>
+          <li>
+            <img
+              src="img/5building-svgrepo-com.svg"
+              class="iconitos"
+              alt="Edificio"
+              id="img4"
+            />
+          </li>
+          <li>
+            <img
+              src="img/6camera-svgrepo-com.svg"
+              class="iconitos"
+              alt="Camara"
+              id="img5"
+            />
+          </li>
+          <li>
+            <img
+              src="img/7coconut-tree-svgrepo-com.svg"
+              class="iconitos"
+              alt="Palmera"
+              id="img6"
+            />
+          </li>
+          <li>
+            <img
+              src="img/8compass-svgrepo-com.svg"
+              class="iconitos"
+              alt="Brujula"
+              id="img7"
+            />
+          </li>
+          <li>
+            <img
+              src="img/9diving-goggles-svgrepo-com.svg"
+              class="iconitos"
+              alt="Antiparras"
+              id="img8"
+            />
+          </li>
+          <li>
+            <img
+              src="img/10drinks-svgrepo-com.svg"
+              class="iconitos"
+              alt="Tragos"
+              id="img9"
+            />
+          </li>
+          <li>
+            <img
+              src="img/11glasses-svgrepo-com.svg"
+              class="iconitos"
+              alt="Lentes"
+              id="img10"
+            />
+          </li>
+          <li>
+            <img
+              src="img/12hat-svgrepo-com.svg"
+              class="iconitos"
+              alt="Sombrero"
+              id="img11"
+            />
+          </li>
+          <li>
+            <img
+              src="img/13high-speed-rail-svgrepo-com.svg"
+              class="iconitos"
+              alt="Tren"
+              id="img12"
+            />
+          </li>
+          <li>
+            <img
+              src="img/14hot-air-balloon-svgrepo-com.svg"
+              class="iconitos"
+              alt="Globo"
+              id="img13"
+            />
+          </li>
+          <li>
+            <img
+              src="img/15hotel-svgrepo-com.svg"
+              class="iconitos"
+              alt="Hotel"
+              id="img14"
+            />
+          </li>
+          <li>
+            <img
+              src="img/16map-svgrepo-com.svg"
+              class="iconitos"
+              alt="Mapa"
+              id="img15"
+            />
+          </li>
+          <li>
+            <img
+              src="img/17medicine-bottle-svgrepo-com.svg"
+              class="iconitos"
+              alt="Medicamento"
+              id="img16"
+            />
+          </li>
+          <li>
+            <img
+              src="img/18pants-svgrepo-com.svg"
+              class="iconitos"
+              alt="Pantalones"
+              id="img17"
+            />
+          </li>
+          <li>
+            <img
+              src="img/19parasol-svgrepo-com.svg"
+              class="iconitos"
+              alt="Sombrilla"
+              id="img18"
+            />
+          </li>
+          <li>
+            <img
+              src="img/20passport-svgrepo-com.svg"
+              class="iconitos"
+              alt="Pasaporte"
+              id="img19"
+            />
+          </li>
+          <li>
+            <img
+              src="img/21sailboat-svgrepo-com.svg"
+              class="iconitos"
+              alt="Bote"
+              id="img20"
+            />
+          </li>
+          <li>
+            <img
+              src="img/22suitcase-svgrepo-com.svg"
+              class="iconitos"
+              alt="Traje"
+              id="img21"
+            />
+          </li>
+          <li>
+            <img
+              src="img/23swimsuit-svgrepo-com.svg"
+              class="iconitos"
+              alt="Malla"
+              id="img22"
+            />
+          </li>
+          <li>
+            <img
+              src="img/24tent-svgrepo-com.svg"
+              class="iconitos"
+              alt="Carpa"
+              id="img23"
+            />
+          </li>
+          <li>
+            <img
+              src="img/4bbq-svgrepo-com.svg"
+              class="iconitos"
+              alt="Barbacoa"
+              id="img24"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="p16">
         <div>
-            <h1>Carga tu recordatorio</h1>
-            <input type="text" name="titulo" class="tarea" id="inputTarea" placeholder="Ingresar tarea">
+          <img
+            src="..."
+            alt=""
+            id="imgSeleccionada"
+            class="imgSeleccionada d-none"
+          />
         </div>
-        <!--------Seleccionar imagen-------->
-        <div class="dropdownContainer" id="containerUlPantalla2">
-            <ul class="slide container-iconitos" id="imgContenedor">
-                <li><img src="img/2bag-svgrepo-com.svg" class="iconitos" alt="Mochila" id="img2"></li>
-                <li><img src="img/1air-ticket-svgrepo-com.svg" class="iconitos" alt="Ticket" id="img1"></li>
-                <li><img src="img/3bank-card-svgrepo-com.svg" class="iconitos" alt="Tarjeta" id="img3"></li>
-                <li><img src="img/5building-svgrepo-com.svg" class="iconitos" alt="Edificio" id="img4"></li>
-                <li><img src="img/6camera-svgrepo-com.svg" class="iconitos" alt="Camara" id="img5"></li>
-                <li><img src="img/7coconut-tree-svgrepo-com.svg" class="iconitos" alt="Palmera" id="img6"></li>
-                <li><img src="img/8compass-svgrepo-com.svg" class="iconitos" alt="Brujula" id="img7"></li>
-                <li><img src="img/9diving-goggles-svgrepo-com.svg" class="iconitos" alt="Antiparras" id="img8"> </li>
-                <li><img src="img/10drinks-svgrepo-com.svg" class="iconitos" alt="Tragos" id="img9"></li>
-                <li><img src="img/11glasses-svgrepo-com.svg" class="iconitos" alt="Lentes" id="img10"></li>
-                <li><img src="img/12hat-svgrepo-com.svg" class="iconitos" alt="Sombrero" id="img11"></li>
-                <li><img src="img/13high-speed-rail-svgrepo-com.svg" class="iconitos" alt="Tren" id="img12"></li>
-                <li><img src="img/14hot-air-balloon-svgrepo-com.svg" class="iconitos" alt="Globo" id="img13"></li>
-                <li><img src="img/15hotel-svgrepo-com.svg" class="iconitos" alt="Hotel" id="img14"></li>
-                <li><img src="img/16map-svgrepo-com.svg" class="iconitos" alt="Mapa" id="img15"></li>
-                <li><img src="img/17medicine-bottle-svgrepo-com.svg" class="iconitos" alt="Medicamento" id="img16"></li>
-                <li><img src="img/18pants-svgrepo-com.svg" class="iconitos" alt="Pantalones" id="img17"></li>
-                <li><img src="img/19parasol-svgrepo-com.svg" class="iconitos" alt="Sombrilla" id="img18"></li>
-                <li><img src="img/20passport-svgrepo-com.svg" class="iconitos" alt="Pasaporte" id="img19"></li>
-                <li><img src="img/21sailboat-svgrepo-com.svg" class="iconitos" alt="Bote" id="img20"></li>
-                <li><img src="img/22suitcase-svgrepo-com.svg" class="iconitos" alt="Traje" id="img21"></li>
-                <li><img src="img/23swimsuit-svgrepo-com.svg" class="iconitos" alt="Malla" id="img22"></li>
-                <li><img src="img/24tent-svgrepo-com.svg" class="iconitos" alt="Carpa" id="img23"></li>
-                <li><img src="img/4bbq-svgrepo-com.svg" class="iconitos" alt="Barbacoa" id="img24"></li>
-            </ul>
-        </div>
-        <div class="p16">
-            <div>
-                <img src="..." alt="" id="imgSeleccionada" class="imgSeleccionada d-none">
-            </div>
-            <button type="button" class="btn" id="btnSeleccionImg">Seleccionar imagen</button>
-        </div>
-        <!--------Dropwdown dias-------->
-        <div class="dropdownContainer">
-            <div>Recordarme en:</div>
-            <select name="tiempo" id="cantidadDias">
-                <option value="1">1 día</option>
-                <option value="2">2 días</option>
-                <option value="3">3 días</option>
-                <option value="4">4 días</option>
-                <option value="5">5 días</option>
-                <option value="6">6 días</option>
-                <option value="7">8 días</option>
-                <option value="8">9 días</option>
-                <option value="9">10 días</option>
-                <option value="10">11 días</option>
-                <option value="12">12 días</option>
-                <option value="13">13 días</option>
-                <option value="14">14 días</option>
-                <option value="15">15 días</option>
-                <option value="16">16 días</option>
-                <option value="17">17 días</option>
-                <option value="18">18 días</option>
-                <option value="19">19 días</option>
-                <option value="20">20 días</option>
-                <option value="21">21 días</option>
-                <option value="22">22 días</option>
-                <option value="23">23 días</option>
-                <option value="24">24 días</option>
-                <option value="25">25 días</option>
-                <option value="26">26 días</option>
-                <option value="27">27 días</option>
-                <option value="28">28 días</option>
-                <option value="29">29 días</option>
-                <option value="30">30 días</option>
-                <option value="31">31 días</option>
-            </select>
-        </div>
+        <button type="button" class="btn" id="btnSeleccionImg">
+          Seleccionar imagen
+        </button>
+      </div>
+      <!--------Dropwdown dias-------->
+      <div class="dropdownContainer">
+        <div>Recordarme en:</div>
+        <select name="tiempo" id="cantidadDias">
+          <option value="1">1 día</option>
+          <option value="2">2 días</option>
+          <option value="3">3 días</option>
+          <option value="4">4 días</option>
+          <option value="5">5 días</option>
+          <option value="6">6 días</option>
+          <option value="7">8 días</option>
+          <option value="8">9 días</option>
+          <option value="9">10 días</option>
+          <option value="10">11 días</option>
+          <option value="12">12 días</option>
+          <option value="13">13 días</option>
+          <option value="14">14 días</option>
+          <option value="15">15 días</option>
+          <option value="16">16 días</option>
+          <option value="17">17 días</option>
+          <option value="18">18 días</option>
+          <option value="19">19 días</option>
+          <option value="20">20 días</option>
+          <option value="21">21 días</option>
+          <option value="22">22 días</option>
+          <option value="23">23 días</option>
+          <option value="24">24 días</option>
+          <option value="25">25 días</option>
+          <option value="26">26 días</option>
+          <option value="27">27 días</option>
+          <option value="28">28 días</option>
+          <option value="29">29 días</option>
+          <option value="30">30 días</option>
+          <option value="31">31 días</option>
+        </select>
+      </div>
 
-        <!--------Boton agregar-------->
-        <button class="btnAdd" type="submit" id="btn2">Agregar</button>
+      <!--------Boton agregar-------->
+      <button class="btnAdd" type="submit" id="btn2">Agregar</button>
     </form>
 
     <!------------------------------------------------listadoTareas-------------------------------------------------->
     <div class="pantalla3" id="pantalla3">
-        <ul class="containerUlPantalla3">
-            <li class="card">
-                <img src="/3bank-card-svgrepo-com.svg" alt="" class="imgSeleccionadaPantalla3">
-                <h2></h2>
-                <div></div>
-                <div></div>
-            </li>
-        </ul>
-        <!--------Boton agregar-------->
-        <button class="btnAdd" id="btn3">Nueva</button>
+      <ul class="containerUlPantalla3">
+        <li class="card">
+          <img
+            src="/3bank-card-svgrepo-com.svg"
+            alt=""
+            class="imgSeleccionadaPantalla3"
+          />
+          <h2></h2>
+          <div></div>
+          <div></div>
+        </li>
+      </ul>
+      <!--------Boton agregar-------->
+      <button class="btnAdd" id="btn3">Nueva</button>
     </div>
 
-
-
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
