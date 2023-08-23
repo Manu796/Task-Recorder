@@ -7,21 +7,21 @@ body {
     padding: 0px;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
 
-.bg-red{
+.bg-red {
     background-color: red;
 }
 
 
-.bg-orange{
+.bg-orange {
     background-color: orange;
 }
 
 
-.bg-green{
+.bg-green {
     background-color: green;
 }
 
@@ -60,13 +60,13 @@ h2 {
     background-color: #D4E6B5;
 }
 
-.containerInput{
+.containerInput {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.imgSeleccionada{
+.imgSeleccionada {
     width: 70px;
 }
 
@@ -88,9 +88,10 @@ li a {
     font-variant: small-caps;
 }
 
-.p16{
+.p16 {
     padding: 16px;
 }
+
 .dropdownContainer {
     width: 250px;
     background: #FFDF64;
@@ -101,7 +102,7 @@ li a {
     align-items: stretch;
 }
 
-.divImgSeleccionada{
+.divImgSeleccionada {
     text-align: center;
 }
 
@@ -177,18 +178,18 @@ li a {
     border-radius: 10px;
 }
 
-.imgSeleccionadaPantalla3{
+.imgSeleccionadaPantalla3 {
     width: 60px;
 }
 
-.containerUlPantalla3{
+.containerUlPantalla3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.card{
+.card {
     width: 150px;
     height: 150px;
     margin: 6px;
@@ -196,15 +197,22 @@ li a {
     border-radius: 10px;
 }
 
-.card h2{
+.cardNoTareas {
+    font-size: 20px;
+    list-style: none;
+    margin: 6px;
+    margin-top: 370px;
+}
+
+.card h2 {
     margin: 0px;
 }
 
-.containerUlPantalla3 button{
+.containerUlPantalla3 button {
     margin: 5px;
     border-radius: 8px;
 }
 
-.containerUlPantalla3 div{
+.containerUlPantalla3 div {
     margin: 0px 0px 0px 22px;
 }

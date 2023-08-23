@@ -9,7 +9,7 @@ let pantalla3 = document.getElementById("pantalla3") //div pantalla 3
 let inputTarea = document.getElementById("inputTarea") //guarda el input
 let imgContenedor = document.getElementById("imgContenedor") //GUARDA EL UL
 const todosLi = imgContenedor.querySelectorAll('li') //guarda todos los li que encuentra en el Ul 
-let cantidadDias = document.getElementById("cantidadDias")
+let cantidadDias = document.getElementById("cantidadDias") //Dias seleccionados para recordar tarea
 const imgSeleccionada = document.querySelector('#imgSeleccionada') //img seleccionada
 const containerUlPantalla3 = document.querySelector('.containerUlPantalla3') //container UL pantalla 3
 const containerUlPantalla2 = document.querySelector('#containerUlPantalla2') //container UL pantalla 2  
@@ -86,9 +86,13 @@ const obtenerTareas = () => {
     containerUlPantalla3.innerHTML = ''
 
     //------------------Verifica si hay alguna tarea cargada ---------------------------
-    if (tarea.length == 0)
-        return containerUlPantalla3.innerHTML = `<li class="card">No hay tareas</li>`
+    if (tarea.length == 0) {
+        containerUlPantalla3.innerHTML = `<li class="cardNoTareas">No hay tareas creadas!</li>`
+    } else {
+        pantalla3.style.display = 'flex' //oculta pantalla 3
+        pantalla1.style.display = 'none' //oculta pantalla 1
 
+    }
     //------------------------------------TIEMPO--------------------------------------
     function tiempoRestante(tiempo) {
         let fechaActual = new Date() //fecha actual
@@ -136,7 +140,11 @@ const borrarTarea = (index) => {
 
 obtenerTareas() //inicializa la lista
 
-
+//al hacer click en boton agregar de pantalla 3 
+btn3.addEventListener('click', () => {
+    pantalla3.style.display = 'none' //Oculta el listado de tareas
+    pantalla2.style.display = 'flex' //Muestra la pantalla para crear tarea nueva
+})
 
 
 
@@ -186,10 +194,4 @@ obtenerTareas() //inicializa la lista
 //         pantalla3.innerHTML += `<div class="container-tarea"> <h3>` + tareaIngresada + `</h3> <p class="tiempo-restante"> Recordar en ` + venceEn + ` dias</p> 
 //     <button class="tareaHecha">Hecho </button> </div>`
 //     })
-// })
-
-// //al hacer click en boton agregar de pantalla 3
-// btn3.addEventListener('click', () => {
-//     pantalla3.style.display = 'none'
-//     pantalla2.style.display = 'flex'
 // })

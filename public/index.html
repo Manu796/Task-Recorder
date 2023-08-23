@@ -4,6 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Recorder</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!--OG Facebook -->
+    <meta name="title" content="Task Recorder">
+    <meta name="description"
+        content="Aplicacion para recordar tareas en lapso de dias indicados>
+    <meta name="keywords" content="task, ortiz manuel, codearock, recorder">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Ortiz Manuel">
+    <meta name="copyright" content="Manuel Ortiz 2023">
+
+    <!--Robots-->
+    <meta name="robots" content="index">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="follow">
+    <meta name="robots" content="nofollow">
+
+    <!-- Metadatos -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://task-recorder-a8e5a.web.app/">
+    <meta property="og:title" content="Aplicacion para recordar tareas en lapso de dias indicados">
+    <meta property="og:description" content="Recordador de Tareas diarias">
+    <meta property="og:image" content=https://task-recorder-a8e5a.web.app/img/favicon.png>
+        <!--Metadatos Twitter-->
+    <meta property="twitter:card" content="https://task-recorder-a8e5a.web.app/img/favicon.png">
+    <meta property="twitter:url" content="https://task-recorder-a8e5a.web.app/">
+    <meta property="twitter:title" content="Recordador de Tareas diarias">
+    <meta property="twitter:description" content="Aplicacion para recordar tareas en lapso de dias indicados">
+    <meta name="twitter:image" content="https://task-recorder-a8e5a.web.app/img/favicon.png">
+
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,8 +56,11 @@
       <h2>No tenes tareas cargadas aun!</h2>
       <img src="img/sad.svg" alt="" class="imgSad" />
       <!--------boton agregar-------->
+      
       <button class="btnAdd" id="btn1">Agregar</button>
+      
     </div>
+    
 
     <!------------------------------------------------cargarTarea--------------------------------------------------->
     <form class="pantalla2 d-none" id="pantalla2">
@@ -241,6 +280,7 @@
             class="imgSeleccionada d-none"
           />
         </div>
+       
         <button type="button" class="btn" id="btnSeleccionImg">
           Seleccionar imagen
         </button>
@@ -281,6 +321,7 @@
           <option value="31">31 días</option>
         </select>
       </div>
+      
 
       <!--------Boton agregar-------->
       <button class="btnAdd" type="submit" id="btn2">Agregar</button>
@@ -302,6 +343,7 @@
       </ul>
       <!--------Boton agregar-------->
       <button class="btnAdd" id="btn3">Nueva</button>
+      
     </div>
 
     <script src="js/main.js"></script>
