@@ -28,9 +28,11 @@ body {
 
 /* -----------------------------------------PANTALLA INICIAL--------------------------------------------------- */
 .pantalla1 {
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
@@ -94,10 +96,13 @@ li a {
     background: #FFDF64;
     margin: 35px auto;
     border-radius: 6px;
-    /* display: flex; */
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+}
+
+.divImgSeleccionada{
+    text-align: center;
 }
 
 .slide {
@@ -135,7 +140,8 @@ li a {
     display: block;
     bottom: 20px;
     right: 13px;
-    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;
     position: fixed;
     width: 65px;
     height: 31px;
@@ -150,7 +156,7 @@ li a {
 
 /* --------------------------------LISTADO TAREAS------------------------------------------ */
 .pantalla3 {
-    display: flex;
+    display: none;
     font-family: 'Source Code Pro', monospace;
     font-size: 13px;
     align-items: flex-start;
