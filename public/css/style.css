@@ -40,18 +40,25 @@ body {
 }
 
 .pantalla1 .imgSad {
-    width: 150px;
+    width: 78px;
 }
 
 .pantalla1 h1,
 h2 {
     text-align: center;
+    margin: 11px;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba( 253, 216, 216, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 500, 44, 130, 1.37 );
+    margin: 19px;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 12px;
 }
 
 /* --------------------------------------------------CARGAR TAREA--------------------------------------------------- */
@@ -78,26 +85,33 @@ h2 {
 
 .pantalla2 .tarea {
     font-variant: small-caps;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
     text-align: center;
     width: 50%;
     margin-top: 10px;
-    border: 0px;
-    border-radius: 10px;
+    /* border: 0px;
+    border-radius: 10px; */
 }
 
 .pantalla2 h1 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 #btnSeleccionImg{
 border-radius: 10px;
 border: 0px;
+font-family: 'Source Code Pro', monospace;
+padding: 8px;
 }
 
 #cantidadDias{
     border: 0px;
     border-radius: 10px;
+    font-family: 'Source Code Pro', monospace;
+    margin: 10px;
+    width: 18%;
 }
 
 li a {
@@ -119,6 +133,17 @@ li a {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    background: rgba( 253, 216, 216, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 500, 44, 130, 1.37 );
+    margin: 19px;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 12px;
+}
+
+.dropdownContainer div{ 
+    margin: 6px;
+    font-size: 15px;
 }
 
 .divImgSeleccionada {
@@ -156,13 +181,13 @@ li a {
 }
 
 .btnAdd {
-    margin: 7px;
+    margin: 8px;
     font-family: 'Source Code Pro', monospace;
     transition: black 0.5s ease-in 0.3s;
     box-shadow: -3px 3px 0px 1px rgba(0, 0, 0, 1.5);
-    width: 32%;
-    height: 36px;
-    font-size: 20px;
+    width: 25%;
+    height: 31px;
+    font-size: 15px;
     background-color: #FFDF64;
     border: 2px black solid;
     list-style: none;
